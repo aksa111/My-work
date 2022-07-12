@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>сайт</title>
+    <meta name="keywords" content="html,css,javascript">
+    <meta name="description" content="На практике знакомимся с базовыми технологиями веб-разработки: HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="01.css">
+    <style>
+        body {
+            padding: 35px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            background: cornsilk;
+            font-family: Times New Roman, serif;
+        }
+
+        h1, h2 {
+            color: #181c21;
+        }
+        .description {
+            padding-left: 35px;
+            padding-bottom: 25px;
+            margin:20px;
+            margin-top:1px;
+            margin-bottom:25px;
+        }
+        .hobby {
+            padding-left: 35px;
+            padding-bottom: 30px;
+            margin: 20px;
+            margin-bottom: 25px;
+        }
+
+        .опыт {
+            padding-left: 35px;
+            padding-bottom: 30px;
+            margin: 20px;
+            margin-bottom: 25px;
+
+        }
+        .связь {
+            padding-left: 50px;
+            padding-bottom: 30px;
+            margin-bottom: 25px;
+        }
+        .курс {
+            padding-left: 35px;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+        .icon{
+            padding-left:800px;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        a:active{
+            color:#9b09ce
+        }
+        .navbar {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            background: #f8adad;
+            padding: 10px 17px 20px 17px;
+        }
+         .navbar a {
+            margin: 10px 17px 17px 17px;
+            background: #f8adad;
+            padding: 10px 17px 20px 17px;
+            }
+        .navbar a:hover{
+            background:darkred;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+        }
+        .btn {
+            background: #CD5C5C;
+            color: #000000;
+            padding: 10px 15px;
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            font-size: 17px;
+            border-radius:15px;
+        }
+        .btn:hover{
+            opacity:.7;
+        }
+        .btn:active{
+            color:darkred;
+        }
+        .list{
+            list-style: none;
+        }
+        .list li {
+            list-style: none;
+            padding: 4px;
+            border-bottom: 1px solid #16001d;
+            }
+         .table {
+            width:100%;
+            }
+         .table td{
+             padding-bottom:10px;
+         }
+         .table td:nth-child(2){
+             color:#826dd9;
+         }
+         .table td:nth-child(3) {
+             color: #CD5C5C;
+            }
+         .связь h2{
+             display: block;
+             width:30%;
+             margin:auto;
+         }
+        .group label {
+            display: block;
+        }
+        .связь{
+            border:1px solid #000000;
+        }
+        .group input{
+            padding:18px 0;
+            width:90%;
+            border:none;
+            font-family:inherit;
+            font-size:16px;
+            height:16px;
+        }
+        .navbar{
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+        }
+        h1 {
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KSYUSHA</h1>
+        <div class="navbar">
+            <nav>
+                <a href="#">главная</a>
+                <a href="#">я</a>
+                <a href="#">контакты</a>
+            </nav>
+        </div>
+        <div>
+            <div class="description">
+                <br>
+                <p>Люблю читать <em>книги</em>, изучаю <strong>программирование</strong>, пью и готовлю кофе</p>
+                <img src="intro/довлатов.jpg" alt="довлатов" width="150">
+                <br>
+            </div>
+        </div>
+        <div>
+            <div class="list">
+                <h2>хобби</h2>
+                <ul>
+                    <li>чтение</li>
+                    <li>секонды</li>
+                    <li>рисование</li>
+                    <li>фотография</li>
+                    <li>английский</li>
+                    <li>скейт</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="опыт">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>дело не в кофе</td>
+                            <td>бариста</td>
+                            <td>2016-2017</td>
+                        </tr>
+                        <tr>
+                            <td>логомашина</td>
+                            <td>веб дизайнер</td>
+                            <td>2017-2018</td>
+                        </tr>
+                        <tr>
+                            <td>нетология</td>
+                            <td>верстальщик</td>
+                            <td>2019-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="курс">
+            <h2>Мои курсы</h2>
+            <ul>
+                <li>нетология</li>
+            </ul>
+        </div>
+        <hr>
+        <footer >
+            <div class="связь">
+                <h2>Связаться со мной</h2>
+
+                <div class="group">
+                    <label for="text">Ваше имя</label>
+                    <input type="text" id=name placeholder="введите имя">
+                </div>
+                <div class="group">
+                    <label for="text">email</label>
+                    <input type="text" id="Ваш email" placeholder="введите email">
+                </div>
+                <div class="group">
+                    <form>
+                        <label for="message">Введите сообщения</label>
+                        <br>
+                        <textarea id=message cols="20" rows="5" placeholder="введите сообщение"></textarea>
+                    </form>
+                </div>
+                <p>
+                    <button class="btn">отправить</button>
+                </p>
+            </div>
+            <div class="icon">
+                <a href="https://t.me/AksaaskaSPT"><img src="intro/tg.jpg" alt="telegram" width="30"></a>
+                <a href="https://vk.com/macaronsbar"><img src="intro/vk.jpg" alt="vk" width="30"></a>
+                <a href="https://www.youtube.com/channel/UCxDSi_KsiW430v2Yzb2gZrQ"><img src="intro/you.jpg" alt="youtube" width="30"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+  </html>     
+
+
